@@ -6,6 +6,7 @@ function App() {
     <>
       <p className="font-bold">Kirans Portofolio</p>
     </>
+    
   );
 }
 
