@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <p>Kirans Portofolio</p>
+      <p className="font-bold">Kirans Portofolio</p>
     </>
   );
 }
