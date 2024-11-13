@@ -10,7 +10,9 @@ export default {
         merriweather: ["Merriweather"],
         oswald: ["Oswald"],
         libre: ["Libre Caslon Text", 'serif'],
-        facultyglyphic: ["Faculty Glyphic"]
+        facultyglyphic: ["Faculty Glyphic"],
+        italianno: ["Italianno"],
+        haviland: ["Mr De Haviland"]
       },
       colors: {
         custom: {
