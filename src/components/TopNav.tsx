@@ -1,7 +1,7 @@
 function TopNav() {
   return (
     <>
-      <nav className="border-t-4 border-custom-primary">
+      <nav className="border-t-4 border-custom-primary max-h-[123.5px]">
         <div className="flex flex-row p-4">
           <div className="flex justify-around items-center grow ">
             <div>
