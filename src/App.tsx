@@ -1,13 +1,14 @@
 import "./App.css";
 import TopNav from "./components/TopNav";
 import Hero from "./components/Hero"
+import About from "./components/About";
 function App() {
 
   return (
     <>
     <TopNav/>
     <Hero/>
-      <p className="font-bold" >Kirans Portofolio</p>
+    <About/>
     </>
     
   );
