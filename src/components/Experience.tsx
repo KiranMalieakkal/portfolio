@@ -15,7 +15,10 @@ function Experience({ works }: { works: Work[] }) {
   return (
     <>
       <>
-        <div className="min-h-screen bg-[#1E2F3F] flex flex-col items-center ">
+        <div
+          className="min-h-screen bg-[#1E2F3F] flex flex-col items-center "
+          id="experience"
+        >
           <div className="lg:m-20 m-10">
             <p className="text-white font-libre font-extrabold lg:text-[40px] md:text-[40px] text-[24px]">
               Experience
@@ -26,7 +29,7 @@ function Experience({ works }: { works: Work[] }) {
           ))}
           <div className="m-10">
             <button
-              className=" bg-slate-900 text-white w-[200px] p-2 border-4 border-custom-quaternary"
+              className=" bg-[#253F57] text-white w-[200px] p-2 hover:scale-105 transition-all duration-300 border-4 border-transparent hover:border-4 hover:border-gray-400 hover:bg-slate-900 "
               onClick={handleShowResume}
             >
               View Full Resume

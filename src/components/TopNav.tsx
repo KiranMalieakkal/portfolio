@@ -1,17 +1,26 @@
 function TopNav() {
   return (
     <>
-      <nav className="border-t-4 border-custom-primary max-h-[123.5px]">
+      <nav
+        className="border-t-4 border-custom-primary max-h-[123.5px]"
+        id="home"
+      >
         <div className="flex flex-row p-4">
           <div className="lg:flex justify-around items-center grow hidden ">
-            <div>
-              <a className="tracking-widest">HOME</a>
+            <div className="hover:border-4 p-2 hover:border-red-100 hover:scale-105 transition-all duration-300">
+              <a href="#home" className="tracking-widest">
+                HOME
+              </a>
             </div>
-            <div>
-              <a className="tracking-widest">ABOUT</a>
+            <div className="hover:border-4 p-2 hover:border-red-100 hover:scale-105 transition-all duration-300">
+              <a href="#about" className="tracking-widest ">
+                ABOUT
+              </a>
             </div>
-            <div>
-              <a className="tracking-widest">EXPERIENCE</a>
+            <div className="hover:border-4 p-2 hover:border-red-100 hover:scale-105 transition-all duration-300">
+              <a href="#experience" className="tracking-widest">
+                EXPERIENCE
+              </a>
             </div>
           </div>
 
@@ -24,14 +33,24 @@ function TopNav() {
             </p>
           </div>
           <div className="lg:flex justify-around items-center grow hidden ">
-            <div>
-              <a className="tracking-widest">BLOG</a>
+            <div className="hover:border-4 p-2 hover:border-red-100 hover:scale-105 transition-all duration-300">
+              <a
+                href="https://kiranmalieakkal.wordpress.com"
+                className="tracking-widest"
+                target="_blank"
+              >
+                BLOG
+              </a>
             </div>
-            <div>
-              <a className="tracking-widest">PROJECTS</a>
+            <div className="hover:border-4 p-2 hover:border-red-100 hover:scale-105 transition-all duration-300">
+              <a href="#projects" className="tracking-widest">
+                PROJECTS
+              </a>
             </div>
-            <div>
-              <a className="tracking-widest">CONTACT</a>
+            <div className="hover:border-4 p-2 hover:border-red-100 hover:scale-105 transition-all duration-300">
+              <a href="#contact" className="tracking-widest">
+                CONTACT
+              </a>
             </div>
           </div>
         </div>

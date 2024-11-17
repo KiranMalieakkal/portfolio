@@ -1,8 +1,11 @@
 function Contact() {
   return (
     <>
-      <div className="min-h-screen bg-[#1E2F3F] flex flex-col items-center p-5 ">
-        <div className="flex flex-col w-[80%] border-8 bg-yellow-50 border-red-100 p-10 mt-auto mb-auto h-[80%]">
+      <div
+        className="min-h-screen bg-[#1E2F3F] flex flex-col items-center p-5 "
+        id="contact"
+      >
+        <div className="flex flex-col border-8 bg-yellow-50 border-red-100 p-10 mt-auto  h-[80%]">
           <div className="flex items-center justify-center">
             <p className="uppercase font-oswald text-[40px] text-gray-400 tracking-widest">
               get in touch

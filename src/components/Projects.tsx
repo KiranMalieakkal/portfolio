@@ -5,7 +5,7 @@ function Projects() {
     <>
       <div
         className="h-auto bg-gray-50 flex flex-col items-center "
-        id="project"
+        id="projects"
       >
         <div className="mt-10">
           <p className="text-black font-libre font-extrabold lg:text-[40px] md:text-[40px] text-[24px]">

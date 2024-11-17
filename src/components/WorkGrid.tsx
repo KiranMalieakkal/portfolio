@@ -35,7 +35,7 @@ function WorkGrid({ work }: { work: Work }) {
               {work?.tech.map((tech, index) => (
                 <div
                   key={index}
-                  className="bg-[#253F57] py-[4px] px-[15px] rounded-full text-white mr-[10px] mb-[10px]"
+                  className="bg-[#253F57] py-[4px] px-[15px] rounded-full text-white mr-[10px] mb-[10px] transition-transform duration-500 ease-in-out transform hover:translate-y-[-15px] "
                 >
                   {tech}
                 </div>

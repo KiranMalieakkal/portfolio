@@ -1,7 +1,10 @@
 function About() {
   return (
     <>
-      <div className="min-h-screen bg-yellow-50  flex flex-col items-center justify-center  ">
+      <div
+        className="min-h-screen bg-yellow-50  flex flex-col items-center justify-center  "
+        id="about"
+      >
         <div className="lg:w-[60%] md:w-[60%] w-[90%] text-center flex flex-col items-center justify-center">
           <div>
             <p className="lg:text-[40px] md:text-[40px] text-[24px] text-center font-libre font-bold">
@@ -50,7 +53,7 @@ function About() {
               opportunity to grow, both personally and professionally.
             </p>
           </div>
-          <div className="flex lg:space-x-4 space-x-1 ">
+          <div className="flex lg:space-x-4 space-x-1 mb-[54px]">
             <img
               alt="Javascript"
               loading="lazy"
@@ -59,6 +62,7 @@ function About() {
               decoding="async"
               data-nimg="1"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+              className="transition-transform duration-500 ease-in-out transform hover:translate-y-[-15px]"
             />
             <img
               alt="Typescript"
@@ -68,6 +72,7 @@ function About() {
               decoding="async"
               data-nimg="1"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+              className="transition-transform duration-500 ease-in-out transform hover:translate-y-[-15px]"
             />
             <img
               alt="React"
@@ -77,6 +82,7 @@ function About() {
               decoding="async"
               data-nimg="1"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+              className="transition-transform duration-500 ease-in-out transform hover:translate-y-[-15px]"
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -85,6 +91,7 @@ function About() {
               width="30"
               height="30"
               viewBox="0 0 48 48"
+              className="transition-transform duration-500 ease-in-out transform hover:translate-y-[-15px]"
             >
               <path
                 fill="#8bc34a"
@@ -102,6 +109,7 @@ function About() {
               width="30"
               height="30"
               viewBox="0 0 48 48"
+              className="transition-transform duration-500 ease-in-out transform hover:translate-y-[-15px]"
             >
               <path
                 fill="#F44336"
@@ -142,6 +150,7 @@ function About() {
               decoding="async"
               data-nimg="1"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+              className="transition-transform duration-500 ease-in-out transform hover:translate-y-[-15px]"
             />
             <img
               alt="HTML"
@@ -151,6 +160,7 @@ function About() {
               decoding="async"
               data-nimg="1"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"
+              className="transition-transform duration-500 ease-in-out transform hover:translate-y-[-15px]"
             />
             <img
               alt="CSS"
@@ -160,6 +170,7 @@ function About() {
               decoding="async"
               data-nimg="1"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg"
+              className="transition-transform duration-500 ease-in-out transform hover:translate-y-[-15px]"
             />
             <img
               alt="Tailwind CSS"
@@ -169,6 +180,7 @@ function About() {
               decoding="async"
               data-nimg="1"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+              className="transition-transform duration-500 ease-in-out transform hover:translate-y-[-15px]"
             />
           </div>
         </div>
