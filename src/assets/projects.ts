@@ -15,7 +15,7 @@ export const projects: Project[] = [
 		name: 'Proof Of Purchase',
         img_link: popImage,
 		description:
-			'Receipt handling and tex deduction app built with React and SpringBoot.',
+			'POP helps users store and organize receipts digitally, making them fully searchable and accessible. It automatically fills in bill details, and includes a tax wizard that simplifies regulations and helps uncover tax deductions.',
 		project_link: 'https://salmon-sand-0f5314103.5.azurestaticapps.net/',
 		github_link: 'https://github.com/KiranMalieakkal/POP',
 	},
@@ -23,7 +23,7 @@ export const projects: Project[] = [
 		name: 'TripTrail',
 		img_link: triptrailImage,
 		description:
-			'A trip handling app crafted with React, TypeScript, SpringBoot, Tailwind CSS, DaisyUI & Figma.',
+			'TripTrail is  designed to help users track and save details of all the trips they haveve taken. The app features an interactive map that highlights countries you have visited, allowing you to visually explore your travel history. Perfect for travel enthusiasts who want to keep a record of their adventures in a simple and engaging way.',
 		project_link: 'https://kiranmalieakkal.github.io/TripTrail/',
 		github_link: 'https://github.com/KiranMalieakkal/TripTrail',
 	},
@@ -31,7 +31,7 @@ export const projects: Project[] = [
 		name: 'PromptMaster',
         img_link: promptMasterImage,
 		description:
-			'A AI image generation game crafted with React, TypeScript, SpringBoot, Tailwind CSS, DaisyUI & Figma.',
+			'PromptMaster is an exciting and interactive game where users are challenged to type a creative prompt that generates an image matching a pre-selected target image. Players will then receive a score based on how closely their generated image aligns with the target image, using AI image generation technology.',
 		project_link: 'https://salt-community.github.io/promptmaster/',
 		github_link: 'https://github.com/salt-community/promptmaster',
 	},

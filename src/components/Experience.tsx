@@ -19,7 +19,7 @@ function Experience({ works }: { works: Work[] }) {
           className="min-h-screen bg-[#1E2F3F] flex flex-col items-center "
           id="experience"
         >
-          <div className="lg:m-20 m-10">
+          <div className="lg:m-20 mt-10">
             <p className="text-white font-libre font-extrabold lg:text-[40px] md:text-[40px] text-[24px]">
               Experience
             </p>
