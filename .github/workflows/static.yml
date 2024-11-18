@@ -36,12 +36,6 @@ jobs:
         run: |
           npm install
           npm run build --if-present
-          cd frontend
-          ls
-          cd dist
-          ls
-          cd assets 
-          ls
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
