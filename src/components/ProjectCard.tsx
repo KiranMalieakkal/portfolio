@@ -17,7 +17,7 @@ function ProjectCard({ project }: { project: Project }) {
           <div className="flex items-center justify-center h-[45px] text-center ">
             <p className="font-libre text-[20px] font-bold">{project.name}</p>
           </div>
-          <div className="m-2 h-[90px]">
+          <div className="m-2 h-[auto] md:min-h-[150px]">
             <p className="flex items-center justify-center text-center text-xs">
               {project.description}
             </p>
