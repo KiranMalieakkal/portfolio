@@ -36,10 +36,14 @@ function About() {
               solutions, learning how to bridge the gap between technology and
               business needs. I then moved to Stockholm to pursue a Master’s in
               Industrial Economics and Management at KTH Royal Institute of
-              Technology. Alongside my Master’s, I enrolled in an intensive
-              full-stack Java training program at the School of Applied
-              Technology, where I developed my skills in building robust web
-              applications using modern technologies and frameworks.
+              Technology. My studies focus on strategic decision-making,
+              economic analysis, and leadership within technology-intensive
+              industries. This academic pursuit has sharpened my analytical
+              skills and broadened my perspective on how technology intersects
+              with business strategy. Alongside my Master’s, I enrolled in an
+              intensive full-stack Java training program at the School of
+              Applied Technology, where I developed my skills in building robust
+              web applications using modern technologies and frameworks.
             </p>
             <br />
             <p>
