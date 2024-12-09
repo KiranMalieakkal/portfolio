@@ -9,7 +9,7 @@ export interface Work {
 function Experience({ works }: { works: Work[] }) {
   const handleShowResume = () => {
     // Open the PDF file in a new tab
-    window.open("/portfolio/Kiran_Malieakkal_CV.pdf", "_blank");
+    window.open("/portfolio/Kiran_Resume.pdf", "_blank");
   };
 
   return (
