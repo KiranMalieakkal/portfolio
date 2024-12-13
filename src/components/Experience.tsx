@@ -29,7 +29,7 @@ function Experience({ works }: { works: Work[] }) {
           ))}
           <div className="m-10">
             <button
-              className=" bg-[#253F57] text-white w-[200px] p-2 hover:scale-105 transition-all duration-300 border-4 border-transparent hover:border-4 hover:border-gray-400 hover:bg-slate-900 "
+              className=" bg-[#253F57] text-white w-[200px] p-2 hover:scale-105 transition-all duration-500 border-4 border-transparent hover:border-4 hover:border-gray-400 hover:bg-slate-900 "
               onClick={handleShowResume}
             >
               View Full Resume
