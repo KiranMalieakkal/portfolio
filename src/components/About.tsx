@@ -6,8 +6,8 @@ function About() {
         id="about"
       >
         <div className="lg:w-[60%] md:w-[60%] w-[90%] text-center flex flex-col items-center justify-center">
-          <div>
-            <p className="lg:text-[40px] md:text-[40px] text-[24px] text-center font-libre font-bold">
+          <div className="mt-10">
+            <p className="lg:text-[40px] md:text-[40px] text-[24px] text-center font-libre font-bold text-black ">
               From Chemical Engineering to Full-Stack Development.
             </p>
           </div>
@@ -18,7 +18,7 @@ function About() {
             </p>
           </div>
           <div className="bg-yellow-400 h-[5px] w-[256px] mb-[54px]"></div>
-          <div className="lg:w-[70%] md:w-[70%] sm:w-[100%] mb-[54px]">
+          <div className="lg:w-[70%] md:w-[70%] sm:w-[100%] mb-[54px] text-black">
             <p>
               My journey into the world of technology began in an unexpected
               place—chemical engineering. It wasn’t until I found myself

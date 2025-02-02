@@ -10,9 +10,9 @@ function WorkGrid({ work }: { work: Work }) {
   return (
     <>
       <div className="flex flex-col items-center justify-center mt-10">
-        <div className="grid lg:grid-cols-11 md:grid-cols-11 grid-rows-10  lg:w-[50%] md:w-[80%] w-[80%] ">
-          <div className="lg:col-span-2 md:col-span-2 row-span-1 text-center  lg:block flex items-center justify-center">
-            <p className="text-gray-400 font-libre text-base font-semibold">
+        <div className="grid lg:grid-cols-12 md:grid-cols-11 grid-rows-10  lg:w-[80%] md:w-[80%] w-[80%] ">
+          <div className="lg:col-span-3 md:col-span-2 row-span-1 text-center  lg:block flex items-center justify-center">
+            <p className="text-gray-400 font-libre text-base font-semibold ">
               {work?.period}
             </p>
           </div>

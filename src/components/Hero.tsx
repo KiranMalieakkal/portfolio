@@ -3,7 +3,7 @@ function Hero() {
   return (
     <>
       <div
-        className=" flex justify-center items-center  min-h-[calc(100vh-123.5px)] "
+        className=" flex justify-center items-center  min-h-[calc(100vh-123.5px)] bg-white text-black  "
         id="hero"
       >
         <div className="">

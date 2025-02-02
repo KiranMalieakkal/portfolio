@@ -9,7 +9,7 @@ export interface Project {
 function ProjectCard({ project }: { project: Project }) {
   return (
     <>
-      <div className="lg:w-[25%] w-[70%] flex flex-col  items-center mt-10 hover:scale-105 hover:shadow-lg hover:bg-gray-100 transition-all duration-300 ">
+      <div className="lg:w-[25%] w-[70%] flex flex-col  items-center mt-10 hover:scale-105 hover:shadow-lg hover:bg-gray-100 transition-all duration-300 text-black ">
         <div className="h-full ">
           <img className="" src={project.img_link} />
         </div>
