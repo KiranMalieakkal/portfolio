@@ -9,7 +9,7 @@ export interface Work {
 function Experience({ works }: { works: Work[] }) {
   const handleShowResume = () => {
     // Open the PDF file in a new tab
-    window.open("/Resume.pdf", "_blank");
+    window.open("/portfolio//Resume.pdf", "_blank");
   };
 
   return (
