@@ -1,50 +1,68 @@
-export interface Work {
-  period: string;
-  position: string;
-  descriptions: string[];
-  tech: string[];
+import { motion } from "framer-motion";
+import { Work } from "./Experience";
+
+interface WorkGridProps {
+  work: Work;
+  index: number;
 }
 
-function WorkGrid({ work }: { work: Work }) {
-  console.log(work);
+function WorkGrid({ work, index }: WorkGridProps) {
+  const isOdd = index % 2 !== 0;
+
+  const cardVariants = {
+    initial: {
+      opacity: 0,
+      x: isOdd ? 100 : -100,
+    },
+    whileInView: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeInOut" as const,
+      },
+    },
+  };
+
   return (
-    <>
-      <div className="flex flex-col items-center justify-center mt-10">
-        <div className="grid lg:grid-cols-12 md:grid-cols-11 grid-rows-10  lg:w-[80%] md:w-[80%] w-[80%] ">
-          <div className="lg:col-span-3 md:col-span-2 row-span-1 text-center  lg:block flex items-center justify-center">
-            <p className="text-gray-400 font-libre text-base font-semibold ">
-              {work?.period}
+    <motion.div
+      className="relative flex items-center justify-center"
+      variants={cardVariants}
+    >
+      <div
+        className={`w-full lg:w-1/2 p-6 bg-card rounded-lg shadow-lg ${
+          isOdd ? "lg:ml-[50%]" : "lg:mr-[50%]"
+        }`}
+      >
+        <div
+          className={`absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-accent rounded-full ${
+            isOdd ? "left-[-8px] lg:left-[-1.7%]" : "right-[-8px] lg:right-[-1.7%]"
+          }`}
+        />
+
+        <p className="text-sm text-accent mb-2 font-mono">{work.period}</p>
+        <h3 className="text-xl font-bold text-text-primary mb-3">
+          {work.position}
+        </h3>
+        <div className="text-text-secondary space-y-3 mb-4">
+          {work.descriptions.map((description, i) => (
+            <p key={i} className="text-sm leading-relaxed">
+              {description}
             </p>
-          </div>
-          <div className="row-span-1 flex lg:hidden md:hidden items-center justify-center mb-2  ">
-            <div className="bg-white w-[1px] h-full "></div>
-          </div>
-          <div className="lg:block md:block lg:col-span-2 md:col-span-2 hidden py-3 pr-6 pl-3">
-            <div className="bg-white h-[1px] "></div>
-          </div>
-          <div className="flex flex-col lg:col-span-7 md:col-span-7 row-span-8 items-center justify-center text-center lg:text-start md:text-start lg:items-start md:items-start">
-            <p className="text-gray-400 font-libre text-base font-semibold uppercase tracking-widest">
-              {work?.position}
-            </p>
-            {work.descriptions.map((description, index) => (
-              <p key={index} className="text-white w-[80%] p-4">
-                {description}
-              </p>
-            ))}
-            <div className="flex flex-wrap ">
-              {work?.tech.map((tech, index) => (
-                <div
-                  key={index}
-                  className="bg-[#253F57] py-[4px] px-[15px] rounded-full text-white mr-[10px] mb-[10px] transition-transform duration-500 ease-in-out transform hover:translate-y-[-15px] "
-                >
-                  {tech}
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-2">
+          {work.tech.map((tech, i) => (
+            <span
+              key={i}
+              className="bg-accent/10 text-accent text-xs font-semibold px-3 py-1 rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
         </div>
       </div>
-    </>
+    </motion.div>
   );
 }
 

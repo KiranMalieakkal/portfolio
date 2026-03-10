@@ -1,45 +1,59 @@
-import image from "../assets/Portofolio_Image-squared.png";
-function Hero() {
+import { motion } from "framer-motion";
+import { FiArrowDown } from "react-icons/fi";
+
+const Hero = () => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <>
-      <div
-        className=" flex justify-center items-center  min-h-[calc(100vh-123.5px)] bg-white text-black  "
-        id="hero"
+    <section
+      id="hero"
+      className="min-h-screen flex flex-col justify-center items-center text-center bg-background text-text-primary px-6"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="">
-          <div className="lg:-mb-5 px-10">
-            <p className="font-haviland lg:text-[64px] md:text-[64px] text-[44px] mt-10 text-center lg:text-start md:text-start">
-              Hi, I am Kiran!
-            </p>
-          </div>
-          <div className="flex">
-            <div className="flex flex-col">
-              <div className="-mr-14 z-10 hidden lg:block md:block">
-                <img
-                  src={image}
-                  className=" w-[255px] h-[255px] rounded-full"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col max-w-[635px] bg-red-100 leading-[2.5rem] px-[60px] py-[32px]">
-              <p className="lg:text-[40px] text-[25px] text-center font-libre font-light">
-                Transforming ideas into seamless digital solutions that are both
-                intuitive and powerful.
-              </p>
-              <div className="w-full flex items-center justify-center p-4">
-                <a href="#about">
-                  {" "}
-                  <button className=" bg-slate-900 text-white w-[100px] border-4 border-transparent hover:scale-105 transition-all duration-300 hover:border-4 hover:border-custom-quaternary">
-                    About Me
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+        <p className="text-lg md:text-xl text-accent mb-3 font-mono tracking-wide">
+          KIRAN MALIEAKKAL
+        </p>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-text-primary mb-6 leading-tight">
+          I build things for the web.
+        </h1>
+        <p className="max-w-2xl mx-auto text-base md:text-lg text-text-secondary mb-10">
+          I'm a full-stack software engineer with a passion for creating beautiful, functional, and user-centered digital experiences. I'm always looking for new challenges and opportunities to learn and grow.
+        </p>
+        <motion.a
+          href="#projects"
+          onClick={(e) => handleScroll(e, "#projects")}
+          className="inline-block bg-accent text-background font-bold py-3 px-8 rounded-full shadow-lg shadow-accent/30 hover:bg-accent-dark transition-all duration-300 text-lg"
+          whileHover={{ scale: 1.05, y: -5, boxShadow: "0px 15px 30px rgba(100, 190, 255, 0.4)"}}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+        >
+          View My Work
+        </motion.a>
+      </motion.div>
+      
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.5, duration: 1, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+        className="absolute bottom-10"
+      >
+        <a href="#about" onClick={(e) => handleScroll(e, "#about")} aria-label="Scroll down">
+          <FiArrowDown className="text-3xl text-text-secondary hover:text-accent transition-colors duration-300" />
+        </a>
+      </motion.div>
+    </section>
   );
-}
+};
 
 export default Hero;

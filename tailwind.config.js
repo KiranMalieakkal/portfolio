@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -15,12 +16,15 @@ export default {
         haviland: ["Mr De Haviland"]
       },
       colors: {
-        custom: {
-          primary: "#740938",
-          secondary: "#AF1740",
-          tertiary: "#CC2B52",
-          quaternary: "#DE7C7D",
-        },
+        background: 'var(--color-background)',
+        'text-primary': 'var(--color-text-primary)',
+        'text-secondary': 'var(--color-text-secondary)',
+        accent: 'var(--color-accent)',
+        'accent-dark': 'var(--color-accent-dark)',
+        card: 'var(--color-card)',
+      },
+      boxShadow: {
+        'accent': '0 0 40px -10px var(--color-accent)',
       },
     },
   },
@@ -28,4 +32,3 @@ export default {
     require('daisyui'),
   ],
 }
-

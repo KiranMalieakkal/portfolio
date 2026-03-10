@@ -1,7 +1,21 @@
+:root {
+  --color-background: #FFFFFF;
+  --color-text-primary: #1F2937;
+  --color-text-secondary: #4B5563;
+  --color-accent: #38BDF8;
+  --color-accent-dark: #0E7490;
+  --color-card: #F9FAFB;
+}
+
+.dark {
+  --color-background: #121212;
+  --color-text-primary: #EAEAEA;
+  --color-text-secondary: #B3B3B3;
+  --color-accent: #38BDF8;
+  --color-accent-dark: #0E7490;
+  --color-card: #1E1E1E;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-html {
-  scroll-behavior: smooth;
-}
