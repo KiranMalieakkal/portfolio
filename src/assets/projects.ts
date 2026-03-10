@@ -1,6 +1,6 @@
 import popImage from '../assets/POP_Project.png'
 import triptrailImage from '../assets/TripTrail_Project.png'
-import promptMasterImage from '../assets/Prompt_Project.png'
+//import promptMasterImage from '../assets/Prompt_Project.png'
 import faverliImage from '../assets/faverli.png'
 
 export interface Project {
